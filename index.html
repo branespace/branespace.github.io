@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Plug Tetris</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Power Plug Tetris</h1>
+    </header>
+    
+    <main>
+        <div class="configuration-panel">
+            <!-- Ship Selection -->
+            <section class="config-section">
+                <h2>Ship Selection</h2>
+                <div class="ship-selection">
+                    <label>
+                        <input type="radio" name="ship" value="Catamaran" checked>
+                        <span class="ship-option">Catamaran</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="ship" value="Dart">
+                        <span class="ship-option">Dart</span>
+                    </label>
+                </div>
+            </section>
+
+            <!-- Power Systems Configuration -->
+            <section class="config-section">
+                <h2>Power Systems</h2>
+                
+                <div class="power-system">
+                    <h3>Reactor (Rows 1-4)</h3>
+                    <select id="reactor-select">
+                        <option value="Split Reactor Mk1">Split Reactor Mk1</option>
+                        <option value="Split Reactor Mk2">Split Reactor Mk2</option>
+                        <option value="Split Reactor Mk3">Split Reactor Mk3</option>
+                        <option value="Solid State Reactor Mk1">Solid State Reactor Mk1</option>
+                        <option value="Solid State Reactor Mk2">Solid State Reactor Mk2</option>
+                        <option value="Solid State Reactor Mk3">Solid State Reactor Mk3</option>
+                        <option value="Materia Scatter Reacotr Mk1">Materia Scatter Reacotr Mk1</option>
+                        <option value="Materia Scatter Reacotr Mk2">Materia Scatter Reacotr Mk2</option>
+                        <option value="Materia Scatter Reacotr Mk3">Materia Scatter Reacotr Mk3</option>
+                        <option value="Null Wave Reactor Mk1">Null Wave Reactor Mk1</option>
+                        <option value="Null Wave Reactor Mk2">Null Wave Reactor Mk2</option>
+                        <option value="Null Wave Reactor Mk3">Null Wave Reactor Mk3</option>
+                    </select>
+                </div>
+
+                <div class="power-system">
+                    <h3>Auxiliary Generator A (Rows 5-6)</h3>
+                    <select id="aux-gen-a-select">
+                        <option value="-Empty-">-Empty-</option>
+                        <option value="Bio Fission Generator Mk1">Bio Fission Generator Mk1</option>
+                        <option value="Bio Fission Generator Mk2">Bio Fission Generator Mk2</option>
+                        <option value="Bio Fission Generator Mk3">Bio Fission Generator Mk3</option>
+                        <option value="Materia Shift Generator Mk1">Materia Shift Generator Mk1</option>
+                        <option value="Materia Shift Generator Mk2">Materia Shift Generator Mk2</option>
+                        <option value="Materia Shift Generator Mk3">Materia Shift Generator Mk3</option>
+                        <option value="Null Tension Generator Mk1">Null Tension Generator Mk1</option>
+                        <option value="Null Tension Generator Mk2">Null Tension Generator Mk2</option>
+                        <option value="Null Tension Generator Mk3">Null Tension Generator Mk3</option>
+                    </select>
+                </div>
+
+                <div class="power-system">
+                    <h3>Auxiliary Generator B (Rows 7-8)</h3>
+                    <select id="aux-gen-b-select">
+                        <option value="-Empty-">-Empty-</option>
+                        <option value="Bio Fission Generator Mk1">Bio Fission Generator Mk1</option>
+                        <option value="Bio Fission Generator Mk2">Bio Fission Generator Mk2</option>
+                        <option value="Bio Fission Generator Mk3">Bio Fission Generator Mk3</option>
+                        <option value="Materia Shift Generator Mk1">Materia Shift Generator Mk1</option>
+                        <option value="Materia Shift Generator Mk2">Materia Shift Generator Mk2</option>
+                        <option value="Materia Shift Generator Mk3">Materia Shift Generator Mk3</option>
+                        <option value="Null Tension Generator Mk1">Null Tension Generator Mk1</option>
+                        <option value="Null Tension Generator Mk2">Null Tension Generator Mk2</option>
+                        <option value="Null Tension Generator Mk3">Null Tension Generator Mk3</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Device Selection -->
+            <section class="config-section">
+                <h2>Device Configuration</h2>
+                <div id="device-categories">
+                    <!-- Device categories will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Action Buttons -->
+            <section class="config-section">
+                <button id="generate-layout" class="primary-button">Generate Optimal Layout</button>
+                <button id="reset-configuration" class="danger-button">Reset Configuration</button>
+                <br><br>
+                <button id="save-layout" class="primary-button">Save Configuration</button>
+                <button id="load-layout" class="secondary-button">Load Configuration</button>
+            </section>
+        </div>
+
+        <!-- Grid Display -->
+        <div class="grid-container">
+            <h2>Ship Layout Grid</h2>
+            <div class="grid-legend">
+                <div class="legend-item">
+                    <div class="legend-color available"></div>
+                    <span>Available</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color protected"></div>
+                    <span>Protected</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color unavailable"></div>
+                    <span>Unavailable</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color occupied"></div>
+                    <span>Occupied</span>
+                </div>
+            </div>
+            <div id="ship-grid" class="ship-grid">
+                <!-- Grid will be generated by JavaScript -->
+            </div>
+            <div id="placement-info" class="placement-info">
+                <h3>Device Placement</h3>
+                <div id="device-list">
+                    <!-- Device placement info will be shown here -->
+                </div>
+                <button id="clear-layout" class="secondary-button" style="margin-top: 1rem;">Clear Layout</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Include data files -->
+    <script src="data/reactors.js"></script>
+    <script src="data/generators.js"></script>
+    <script src="data/devices.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

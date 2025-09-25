@@ -1,0 +1,322 @@
+=====================
+Key
+O Available square
++ Protected square
+X Occupied square
+- Unavailable square
+=====================
+Jump Drive:
+Default
+XX
+X
+
+Sensors:
+Sector Scanner Mk1
+XX
+
+Supply Uplink Unit Mk1
+ XX
+XX
+
+Vector Targeting Module Mk1
+XXX
+X
+
+Engine:
+Drift Phase Engine Mk1
+XXX
+
+Drift Phase Engine Mk2
+XXX
+
+Drift Phase Engine Mk3
+XXX
+
+Nitro Pulse Engine Mk1
+XXXX
+
+Nitro Pulse Engine Mk2
+XXXX
+
+Nitro Pulse Engine Mk3
+XXXX
+
+Microplasma Engine Mk1
+X
+
+Microplasma Engine Mk2
+X
+
+Microplasma Engine Mk3
+X
+
+Mass Ejector Engine Mk1
+XXX
+
+Mass Ejector Engine Mk2
+XXX
+
+Mass Ejector Engine Mk3
+XXX
+
+Pilot Weapon:
+Fragment Cannon Mk1
+XXX
+ X
+
+Fragment Cannon Mk2
+XXX
+ X
+
+Fragment Cannon Mk3
+XXX
+ X
+
+Disruptor Laser Mk1
+XX
+X
+
+Disruptor Laser Mk2
+XX
+X
+
+Disruptor Laser Mk3
+XX
+
+Rapid Pulse Cannon Mk1
+XXX
+XXX
+
+Rapid Pulse Cannon Mk2
+XXX
+XXX
+
+Rapid Pulse Cannon Mk3
+XXX
+XXX
+
+Bolt Accellerator Mk1
+XXX
+X X
+
+Bolt Accellerator Mk2
+XXX
+X X
+
+Bolt Accellerator Mk3
+XXX
+X X
+
+Multi Turrets:
+Assault Turrets Mk1
+XXX
+X
+
+Assault Turrets Mk2
+XXX
+X
+
+Assault Turrets Mk3
+XXX
+X
+
+Gatling Turrets Mk1
+XXX
+XXX
+X
+
+Gatling Turrets Mk2
+XXX
+XXX
+X
+
+Gatling Turrets Mk3
+XXX
+XXX
+X
+
+Flak Launcher Turrets Mk1
+XXXX
+X  X
+
+Flak Launcher Turrets Mk2
+XXXX
+X  X
+
+Flak Launcher Turrets Mk3
+XXXX
+X  X
+
+Mining Lasers Mk1
+XX
+X
+
+Mining Lasers Mk2
+XX
+X
+
+Mining Lasers Mk3
+XX
+X
+
+Special Weapon:
+Lance Railgun Mk1
+XXX
+X X
+X X
+
+Lance Railgun Mk2
+XXX
+X X
+X X
+
+Lance Railgun Mk3
+XXX
+X X
+X X
+
+Burst Shield Mk1
+XX
+XX
+
+Burst Shield Mk2
+XX
+XX
+
+Burst Shield Mk3
+XX
+XX
+
+Misisle Launcher Mk1
+XXX
+XXX
+XXX
+
+Misisle Launcher Mk2
+XXX
+XXX
+XXX
+
+Misisle Launcher Mk3
+XXX
+XXX
+XXX
+
+Targeting Module Mk1
+XX
+
+Targeting Module Mk2
+XX
+
+Targeting Module Mk3
+XX
+
+Reactor:
+Split Reactor Mk1
+OO----OO
+OOO--OOO
+OOO--OOO
+OOO--OOO
+
+Split Reactor Mk2
+OO----OO
+OOO--OOO
++OO--OO+
++OO--OO+
+
+Split Reactor Mk3
+OO----OO
+OOO--OOO
+++O--O++
+++O--O++
+
+Solid State Reactor Mk1
+--OOOO--
+--OOOO--
+--++++--
+--++++--
+
+Solid State Reactor Mk2
+--OOOO--
+--++++--
+--++++--
+--++++--
+
+Solid State Reactor Mk3
+--++++--
+--++++--
+--++++--
+--++++--
+
+Materia Scatter Reacotr Mk1
+OOOOOOOO
+-O-OO-O-
+OOOOOOOO
++-+--+-+
+
+Materia Scatter Reacotr Mk2
+OOOOOOOO
+-O-OO-O-
+O++OO++O
++-+--+-+
+
+Materia Scatter Reacotr Mk3
+OOOOOOOO
+-O-OO-O-
+++++++++
++-+--+-+
+
+Null Wave Reactor Mk1
+OO----OO
+OOO--OOO
+-++OO++-
+--+OO+--
+
+Null Wave Reactor Mk2
++O----O+
++OO--OO+
+-++OO++-
+--+OO+--
+
+Null Wave Reactor Mk3
++O----O+
+++O--O++
+-++OO++-
+--+OO+--
+
+Auxiliary Generators:
+Bio Fission Generator Mk1
+--OOOO--
+--0--0--
+
+Bio Fission Generator Mk2
+-+0000+-
+-O----O-
+
+Bio Fission Generator Mk3
++OOOOOO+
++------+
+
+Materia Shift Generator Mk1
+-OO--OO-
+-OO--OO-
+
+Materia Shift Generator Mk2
+-OO--OO-
+-++--++-
+
+Materia Shift Generator Mk3
+-O+--+O-
+-++--++-
+
+Null Tension Generator Mk1
+--OOOO--
+--OOOO--
+
+Null Tension Generator Mk2
+--OOOO--
+--+OO+--
+
+Null Tension Generator Mk3
+--+OO+--
+--+OO+--
